@@ -4602,7 +4602,7 @@ div a {
 
 html, body {
   height: 100%;
-  background-image: url("dist/greece.1255ab2f.jpg");
+  background-image: url("/dist/greece.1255ab2f.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
