@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('/node_modules/@fortawesome/fontawesome-free/css/all.css');
+
+
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+div a {
+    width: 100%;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    color: white;
+    // padding: .75rem 1rem;
+}
+
+html, body {
+    height: 100%;
+    background-image: url("greece.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.audioVisualizer {
+    box-shadow: 0 0 32px 4px rgba(250,250,250,250);
+    font-family: 'Oswald', sans-serif;
+    width: 800px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+    canvas {
+        flex: 2;
+        width: 100%;
+        background-color: black;
+        // border-radius: 15px;
+    }
+
+}
+
+.playlist {
+    background: black;
+    // display: flex;
+    flex-direction: column;
+    a {
+        padding: .75rem 1rem;
+        // padding: .75rem 1rem;
+        display: flex;
+        align-items: center;
+        width: auto;
+        color: white;
+        text-decoration: none;
+        &:hover {
+            background-color: rgb(255,255,255);
+            color: black;
+        }
+        i {
+            font-size: .65rem;
+            margin-right: .65rem;
+        }
+    }
+}
+
+
+
+
+// .menu {
+//     display: block;
+//     width: 60px;
+// }
+
+// html, body {
+//     height: 100%;
+//     background-image: url("../lake.jpg");
+//     background-repeat: no-repeat;
+//     background-size: cover;
+// }
+
+// body {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+// }
+
+// .audioVisualizer {
+//     box-shadow: 0 0 32px 4px rgba(200,200,200,200);
+//     // box-shadow: 0 0 32px 4px rgba(255,255,255,200);
+//     // box-shadow: 0 0 32px 4px rgba(0,0,0,0.2);
+//     font-family: 'Oswald', sans-serif;
+//     width: 800px;
+//     height: 400px;
+//     display: flex;
+
+    
+//     canvas {
+//         flex: 2;
+//         width: 100%;
+//         background-color: white;
+//         // border-radius: 15px;
+//     }
+
+// }
+
+// .playlist {
+//     background: lightgray;
+//     display: flex;
+//     flex-direction: column;
+//     a {
+//         padding: .75rem 1rem;
+//         display: flex;
+//         align-items: center;
+//         width: 100%;
+//         color: white;
+//         text-decoration: none;
+//         &:hover {
+//             background-color: white;
+//             color: black;
+//         }
+//         i {
+//             font-size: .65rem;
+//             margin-right: .65rem;
+//         }
+//     }
+// }
