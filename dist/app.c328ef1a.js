@@ -284,15 +284,15 @@ var _AudioVisualizer = _interopRequireDefault(require("./AudioVisualizer"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var audioVisualizer = new _AudioVisualizer.default('.audioVisualizer', [{
-  url: 'songs/Make_it_to_Heaven.mp3',
-  name: 'MAKE IT TO HEAVEN'
+var audioVisualizer = new _AudioVisualizer.default(".audioVisualizer", [{
+  url: "./songs/Make_it_to_Heaven.mp3",
+  name: "MAKE IT TO HEAVEN"
 }, {
-  url: 'songs/Midnight_Hour.mp3',
-  name: 'MIDNIGHT HOUR'
+  url: "./songs/Midnight_Hour.mp3",
+  name: "MIDNIGHT HOUR"
 }, {
-  url: 'songs/Ritual.mp3',
-  name: 'RITUAL'
+  url: "./songs/Ritual.mp3",
+  name: "RITUAL"
 }]);
 },{"./AudioVisualizer":"AudioVisualizer.js"}],"node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -322,7 +322,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50926" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61199" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -499,3 +499,4 @@ function hmrAcceptRun(bundle, id) {
   }
 }
 },{}]},{},["node_modules/parcel/src/builtins/hmr-runtime.js","app.js"], null)
+//# sourceMappingURL=/app.c328ef1a.js.map
