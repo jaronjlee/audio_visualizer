@@ -4555,7 +4555,7 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 400;
   font-display: block;
-  src: url("/fa-brands-400.1bb139e6.eot");
+  src: url("./fa-brands-400.1bb139e6.eot");
   src: url("/fa-brands-400.1bb139e6.eot?#iefix") format("embedded-opentype"), url("/fa-brands-400.1d34615d.woff2") format("woff2"), url("/fa-brands-400.eca31406.woff") format("woff"), url("/fa-brands-400.df86de32.ttf") format("truetype"), url("/fa-brands-400.f1eb0e8c.svg#fontawesome") format("svg"); }
 
 .fab {
