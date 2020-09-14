@@ -7,6 +7,15 @@
     justify-content: flex-start;
 }
 
+.fa-play {
+    background-color: none;
+}
+
+.fa-pause {
+    background-color: lightgray;
+    color: black;
+}
+
 div a {
     width: 100%;
     text-decoration: none;
@@ -18,7 +27,7 @@ div a {
 
 html, body {
     height: 100%;
-    background-image: url("/greece.jpg");
+    background-image: url("/beach.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }

@@ -213,7 +213,7 @@ var AudioVisualizer = /*#__PURE__*/function () {
         var audioItem = document.createElement('a');
         audioItem.href = audio.url; //each audio item has URL and name
 
-        audioItem.innerHTML = "<i class=\"fa fa-play\"></i>".concat(audio.name);
+        audioItem.innerHTML = "<i class=\"fa play\"></i>".concat(audio.name); // audioItem.innerHTML = `<i class="fa fa-play"></i>${audio.name}`
 
         _this.setupEventListener(audioItem);
 
@@ -260,7 +260,9 @@ var AudioVisualizer = /*#__PURE__*/function () {
   }, {
     key: "setPlayIcon",
     value: function setPlayIcon(ele) {
-      var icon = ele.querySelector('i');
+      var icon = ele.querySelector('i'); // icon.classList.remove('pause');
+      // icon.classList.add('play');
+
       icon.classList.remove('fa-pause');
       icon.classList.add('fa-play');
     }
@@ -322,7 +324,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61199" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54932" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -499,4 +501,3 @@ function hmrAcceptRun(bundle, id) {
   }
 }
 },{}]},{},["node_modules/parcel/src/builtins/hmr-runtime.js","app.js"], null)
-//# sourceMappingURL=/app.c328ef1a.js.map

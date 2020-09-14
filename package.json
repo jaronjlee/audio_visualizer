@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "cp -R songs dist/songs && parcel --no-source-maps index.html --public-url ./"
+    "start": "cp -R songs dist/songs && parcel --no-source-maps index2.html --public-url ./"
   },
   "keywords": [],
   "author": "",
