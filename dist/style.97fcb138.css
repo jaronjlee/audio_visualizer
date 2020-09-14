@@ -4585,19 +4585,57 @@ readers do not read off random characters that represent icons */
   font-family: 'Font Awesome 5 Free';
   font-weight: 900; }
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
-.menu {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
 }
 
-.fa-play {
+/* Modal Content/Box */
+.modal-content {
   background-color: none;
+  background-color: #fefefe;
+  margin: 2% auto;
+  /* 15% from the top and centered */
+  padding: 15px;
+  width: 40%;
+  /* Could be more or less, depending on screen size */
+  font-family: "Oswald", sans-serif;
+  color: black;
 }
 
-.fa-pause {
-  background-color: lightgray;
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
   color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#myBtn {
+  cursor: pointer;
 }
 
 div a {
@@ -4606,11 +4644,12 @@ div a {
   font-family: "Oswald", sans-serif;
   font-weight: bold;
   color: white;
+  padding: 2rem 2rem;
 }
 
 html, body {
   height: 100%;
-  background-image: url("./dist/beach.0b90b284.jpg");
+  background-image: url("beach.0b90b284.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -4618,7 +4657,7 @@ html, body {
 body {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
 }
 
@@ -4630,6 +4669,7 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  margin-top: 15%;
 }
 .audioVisualizer canvas {
   flex: 2;

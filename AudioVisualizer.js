@@ -69,8 +69,7 @@ export default class AudioVisualizer {
         this.audio.forEach(audio => {                               //iterate through audio and create audio items to append to playlist
             const audioItem = document.createElement('a');          
             audioItem.href = audio.url;                             //each audio item has URL and name
-            audioItem.innerHTML = `<i class="fa play"></i>${audio.name}`
-            // audioItem.innerHTML = `<i class="fa fa-play"></i>${audio.name}`
+            audioItem.innerHTML = `<i class="fa fa-play"></i>${audio.name}`
             this.setupEventListener(audioItem);
             playlistElem.appendChild(audioItem);
         })
@@ -106,8 +105,6 @@ export default class AudioVisualizer {
 
     setPlayIcon(ele) {
         const icon = ele.querySelector('i');
-        // icon.classList.remove('pause');
-        // icon.classList.add('play');
         icon.classList.remove('fa-pause');
         icon.classList.add('fa-play');
     }

@@ -213,7 +213,7 @@ var AudioVisualizer = /*#__PURE__*/function () {
         var audioItem = document.createElement('a');
         audioItem.href = audio.url; //each audio item has URL and name
 
-        audioItem.innerHTML = "<i class=\"fa play\"></i>".concat(audio.name); // audioItem.innerHTML = `<i class="fa fa-play"></i>${audio.name}`
+        audioItem.innerHTML = "<i class=\"fa fa-play\"></i>".concat(audio.name);
 
         _this.setupEventListener(audioItem);
 
@@ -260,9 +260,7 @@ var AudioVisualizer = /*#__PURE__*/function () {
   }, {
     key: "setPlayIcon",
     value: function setPlayIcon(ele) {
-      var icon = ele.querySelector('i'); // icon.classList.remove('pause');
-      // icon.classList.add('play');
-
+      var icon = ele.querySelector('i');
       icon.classList.remove('fa-pause');
       icon.classList.add('fa-play');
     }
@@ -324,7 +322,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54932" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63239" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
